@@ -1,2 +1,1 @@
-# random-image-examples
-Example random image websites
+# Example Random Image Websites
