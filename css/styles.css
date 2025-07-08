@@ -25,7 +25,7 @@ h1 {
 
 main {
   padding: 2rem 1rem;
-  max-width: 700px;
+  max-width: 760px;
   margin: auto;
 }
 
@@ -40,27 +40,31 @@ li {
   padding: 1rem;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Horizontal layout: image left, text right */
+/* Image left, text right layout */
 .preview-item {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+/* Image styling */
 .preview-item img {
   width: 100px;
+  max-height: 100px;
   height: auto;
   object-fit: contain;
   border-radius: 4px;
   flex-shrink: 0;
+  display: block;
 }
 
-/* Text block next to image */
+
+/* Text section */
 .preview-item div {
-  flex-grow: 1;
+  flex: 1;
   min-width: 0;
   overflow-wrap: break-word;
 }
@@ -92,23 +96,4 @@ footer {
 footer a {
   margin: 0;
   padding: 0;
-}
-
-/* Responsive: stack image/text on small screens */
-@media (max-width: 480px) {
-  .preview-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .preview-item img {
-    width: 80px;
-    margin-bottom: 0.5rem;
-  }
-
-  .preview-item div {
-    text-align: center;
-    width: 100%;
-  }
 }
